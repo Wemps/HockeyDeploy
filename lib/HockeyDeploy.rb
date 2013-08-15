@@ -1,10 +1,16 @@
 # Include the Base URI Components
 require 'httparty'
 require 'multi_json'
-require 'required/base_api'
+
+# Include the Required Config Files
+Dir[File.expand_path('../required/*.rb', __FILE__)].each{|f| require f}
 
 # Include the Different Modules
-require 'modules/team_member'
+Dir[File.expand_path('../client/*.rb', __FILE__)].each{|f| require f}
+
+# Include The Client
+require 'client.rb'
 
 module HockeyDeploy
+  extend Config
 end

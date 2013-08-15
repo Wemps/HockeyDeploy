@@ -9,8 +9,8 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Jeremy Wemple"]
   gem.email         = ["jeremy+dev@gmail.com"]
   gem.homepage      = "http://jeremywemple.com"
-  gem.summary       = %q{A rails gem to access your HockeyApp app deployment service API v2.}
-  gem.description   = %q{The gem is designed to help you access data found on your HockeyApp account through their open API. As of August, 2013 the gem is incomplete. We started with the app commands to manage, edit and delete apps including managing members of the app using V2 of their API.}
+  gem.summary       = %q{A simple gem to access your HockeyApp app deployment service API v2.}
+  gem.description   = %q{The gem is designed to help you access data found on your HockeyApp account through their open API. As of August, 2013 the gem is incomplete, all it does is add team members. We started with the app commands to manage, edit and delete apps including managing members of the app using V2 of their API.}
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
