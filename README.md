@@ -18,7 +18,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+require "hockeyapp"
+
+# To get your Hockey App API Key, login and go to your profile
+HockeyApp.configure do |config|
+  config.endpoint = YOUR_CLIENT_KEY #optional, if you self host your Hockey App
+  config.api_key_ = YOUR_API KEY
+end
 
 ## Contributing
 

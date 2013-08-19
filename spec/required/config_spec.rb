@@ -4,7 +4,9 @@ describe HockeyDeploy::Config do
   
   HockeyDeploy::Config::CONFIG_KEYS.each do |key|
     describe ".#{key}" do
-      it 'should return the default value' do
+      it 'should return the default value for #{key}' do
+        puts "CONFIGURATION"
+        puts HockeyDeploy.send(key)
         HockeyDeploy.send(key).should == HockeyDeploy::Config.const_get("DEFAULT_#{key.upcase}")
       end
     end

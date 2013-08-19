@@ -5,7 +5,7 @@ module HockeyDeploy
       module TeamMembers
         
         def list_members_for_app(app_id)
-          get_request("/#{app_id}/app_users")
+          get_request("#{@endpoint}/#{app_id}/app_users")
         end
         
         def add_member_to_app(app_id, member)
@@ -17,11 +17,11 @@ module HockeyDeploy
           #   :tags => "internal,codenauts" <# comma delimited list
           # }
           
-          post_request("/#{app_id}/app_users", member)
+          post_request("#{@endpoint}/#{app_id}/app_users", member)
         end
         
         def remove_member_from_app(app_id, member_id)
-          delete_request("/#{app_id}/app_users/#{member_id}")
+          delete_request("#{@endpoint}/#{app_id}/app_users/#{member_id}")
         end
       end
     end

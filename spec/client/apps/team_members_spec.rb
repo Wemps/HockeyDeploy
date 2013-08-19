@@ -2,7 +2,12 @@ require 'rspec_helper'
 
 describe HockeyDeploy::Client do
   before(:each) do
-    @client = HockeyDeploy::Client.new('')
+    HockeyDeploy.configure do |config|
+      config.endpoint = '' #optional, if you self host your Hockey App
+      config.api_key = ''
+    end
+    
+    @client = HockeyDeploy::Client.new
   end
   
   describe ".apps" do
@@ -25,5 +30,9 @@ describe HockeyDeploy::Client do
       @g = @client.list_members_for_app('46b2673cb5e87ffe892ec97a1318dfd7')[:app_users]
       puts @client.remove_member_from_app('46b2673cb5e87ffe892ec97a1318dfd7', @g.last[:id])
     end
+  end
+  
+  after :each do
+    HockeyDeploy.reset
   end
 end

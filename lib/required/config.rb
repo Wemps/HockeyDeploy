@@ -6,7 +6,7 @@ module HockeyDeploy
         :endpoint
     ].freeze
     
-    DEFAULT_ENDPOINT  = 'https://rink.hockeyapp.net/api/2/apps'.freeze
+    DEFAULT_ENDPOINT  = 'https://rink.hockeyapp.net/api/2/apps'
     DEFAULT_API_KEY   = nil
     
     attr_accessor *CONFIG_KEYS
