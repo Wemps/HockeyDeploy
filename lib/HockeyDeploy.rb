@@ -11,6 +11,6 @@ Dir[File.expand_path('../client/*.rb', __FILE__)].each{|f| require f}
 # Include The Client
 require 'client.rb'
 
-module hockeydeploy
+module Hockeydeploy
   extend Config
 end
