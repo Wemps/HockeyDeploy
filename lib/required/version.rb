@@ -1,3 +1,3 @@
-module hockeydeploy
+module Hockeydeploy
   VERSION = "0.0.2"
 end
