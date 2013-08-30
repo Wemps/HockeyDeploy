@@ -1,4 +1,4 @@
-module hockeydeploy
+module Hockeydeploy
   module Data
     
     include HTTParty
