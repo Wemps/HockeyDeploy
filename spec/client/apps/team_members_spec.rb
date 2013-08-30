@@ -1,13 +1,13 @@
 require 'rspec_helper'
 
-describe HockeyDeploy::Client do
+describe hockeydeploy::Client do
   before(:each) do
-    HockeyDeploy.configure do |config|
+    hockeydeploy.configure do |config|
       config.endpoint = '' #optional, if you self host your Hockey App
       config.api_key = ''
     end
     
-    @client = HockeyDeploy::Client.new
+    @client = hockeydeploy::Client.new
   end
   
   describe ".apps" do
@@ -33,6 +33,6 @@ describe HockeyDeploy::Client do
   end
   
   after :each do
-    HockeyDeploy.reset
+    hockeydeploy.reset
   end
 end

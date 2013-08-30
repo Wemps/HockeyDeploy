@@ -1,4 +1,4 @@
-module HockeyDeploy
+module Hockeydeploy
   class Client
     # Defines methods related to users
     module Apps

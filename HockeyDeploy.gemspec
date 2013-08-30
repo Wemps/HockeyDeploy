@@ -4,8 +4,8 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'required/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "HockeyDeploy"
-  gem.version       = HockeyDeploy::VERSION
+  gem.name          = "hockeydeploy"
+  gem.version       = Hockeydeploy::VERSION
   gem.authors       = ["Jeremy Wemple"]
   gem.email         = ["jeremy+dev@gmail.com"]
   gem.homepage      = "http://jeremywemple.com"

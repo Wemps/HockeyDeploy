@@ -1,8 +1,8 @@
 require 'rspec_helper'
 
-describe HockeyDeploy::Client do
+describe hockeydeploy::Client do
   before(:each) do
-    @client = HockeyDeploy::Client.new('')
+    @client = hockeydeploy::Client.new('')
   end
   
   describe "apps" do

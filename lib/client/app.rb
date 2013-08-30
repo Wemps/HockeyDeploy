@@ -1,4 +1,4 @@
-module HockeyDeploy
+module Hockeydeploy
   class Client
     # Defines methods related to users
     module Apps
@@ -8,7 +8,7 @@ module HockeyDeploy
         get_request('', @options)
       end
       
-      include HockeyDeploy::Client::Apps::TeamMembers      
+      include Hockeydeploy::Client::Apps::TeamMembers      
     end
   end
 end

@@ -1,4 +1,4 @@
-module HockeyDeploy
+module Hockeydeploy
   module Config  
     
     CONFIG_KEYS = [
